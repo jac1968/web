@@ -1,116 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/Imagenes/zulia.jpg" type="image/x-icon">
-    <title>Formulario</title>
-</head>
-<body>
-    <form action="nada.php" method="POST"></form>
-      <h1>Practica de Formulario</h1>
-      <section id="preguntas">
-        <p>
-            <label for="name">Nombres y Apellidos :</label>
-            <input type="text" name="nombres" id="name">
-        </p>
-        <p>
-            <label for="fecnac">Fecha de Nacimiento :</label>
-            <input type="date" name="fec_nac" id="fecnac">
-        </p>
-        <fieldset>
-            <legend>Sexo</legend>
-            <ul>
-                <li>
-                    <label>
-                        <input type="radio" name="sexo" value="M">
-                        Masculino
-                    </label>
-                </li>
-                <li>
-                    <label>
-                        <input type="radio" name="sexo" value="F">
-                        Femenino
-                    </label>
-                </li>
-            </fieldset>
-                <p>
-                    <label for="phone">Teléfono :</label>
-                    <input type="tel" name="telef" id="phone">
-                </p>
-                <p>
-                    <label for="photo">Foto Perfil :</label>
-                    <input type="file" name="foto" id="photo" accept="image/*">
-                </p>
-                <p>
-                    <label for="color">Color Favorito :</label>
-                    <input type="color" name="color" id="color">
-                </p>
-                <p>
-                    <label for="hour">Hora de Despertarse :</label>
-                    <input type="time" name="hora" id="hour">
-                </p>    
-                <p>
-                    <label for="number">Carga Familiar :</label>
-                    <input type="number" name="numero" id="number"
-                    min="1" max="12"> 
-                </p>
-                <p>
-                    <label for="datetime">Fecha y Hora :</label>
-                    <input type="datetime-local" name="fechahora" id="datetime">
-                </p>
-                <p>
-                    <label for="month">Mes y Año :</label>
-                    <input type="month" name="mes" id="month">
-                </p>
-                <label>Dia de la semana :</label>
-                <select name="dias" id="days">
-                    <option value="Lunes">Lunes</option>
-                    <option value="Martes">Martes</option>
-                    <option value="Miercoles">Miercoles</option>
-                    <option value="Jueves">Jueves</option>
-                    <option value="Viernes">Viernes</option>
-                    <option value="Sabado">Sabado</option>
-                    <option value="Domingo">Domingo</option>
-                </select>
-                <p>
-                    <label for="week">Elige una Semana y Año :</label>
-                    <input type="week" name="semana" id="week">
-                </p>
-                <p>
-                    <label for="volume">Configure Volumen :</label>
-                    <input type="range" name="volume" id="volume">
-                </p>
-                <label for="obs">Observación :</label>
-                <p>
-                    <textarea name="observa" id="obs" cols="50" rows="10"></textarea>
-                </p>
-                <fieldset>
-                    <ul>
-                        <li>
-                            <label>
-                                <input type="checkbox" name="confir">
-                                Todos los datos son verdaderos.
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="checkbox" name="confir">
-                                Acepto que verifiquen la información.
-                            </label>
-                        </li>
-                    </ul>
-                </fieldset>
-            </ul>
-        
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Esta es otra Práctica" />
+    <title>Práctica HTML - CSS</title>
+    <link rel="shortcut icon" href="/Imagenes/zulia.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css">
+    
+    
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <img src="/Imagenes/logo.png" alt="" width="50" />
+        <h1>Práctica de HTML y CSS</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/Formulario.html" target="_blank">Formularios</a></li>
+          <li><a href="/tabla.html" target="_blank">Tablas</a></li>
+          <li><a href="#">Contenido</a></li>
+          <li><a href="#">Ayuda</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="principal">
+      <section class="articulo">
+        <article>
+          <h2>Título del Primer Artículo</h2>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eius
+          unde est numquam ex, iure at, iusto ullam deleniti excepturi beatae
+          ipsa, nemo culpa corrupti ad. Mollitia recusandae in ipsam. Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Animi consectetur
+          natus commodi autem quasi nesciunt nihil nostrum praesentium eius
+          voluptate alias ea dolores, eos deserunt ratione perspiciatis sunt
+          maxime numquam magnam dolorum rem eaque esse omnis temporibus!
+          Nesciunt, officia. Illo.
+          maxime numquam magnam dolorum rem eaque esse omnis temporibus!
+          Nesciunt, officia. Illo.
+        </article>
+
+        <article>
+          <h2>Título del Segundo Artículo</h2>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eius
+          unde est numquam ex, iure at, iusto ullam deleniti excepturi beatae
+          ipsa, nemo culpa corrupti ad. Mollitia recusandae in ipsam. Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Animi consectetur
+          natus commodi autem quasi nesciunt nihil nostrum praesentium eius
+          voluptate alias ea dolores, eos deserunt ratione perspiciatis sunt
+          maxime numquam magnam dolorum rem eaque esse omnis temporibus!
+          Nesciunt, officia. Illo.
+          maxime numquam magnam dolorum rem eaque esse omnis temporibus!
+          Nesciunt, officia. Illo.
+        </article>
       </section>
-      <section id="botones">
-            <p>
-                <input type="submit">
-            </p>
-            <p>
-                <input type="reset">
-            </p>
-      </section>  
-</body>
+
+      <aside>
+        <h3>Contenido de Aside</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, nulla
+          deserunt incidunt illum, veritatis cum quo sequi praesentium iure
+          expedita laborum cumque et consequatur voluptatibus deleniti. Laborum
+          quis odit dicta. nulla deserunt incidunt illum, veritatis cum quo
+          sequi praesentium voluptatibus deleniti. Laborum quis odit dicta.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+          consectetur natus commodi autem quasi nesciunt nihil nostrum
+          praesentium eius voluptate alias ea dolores, eos deserunt ratione
+          perspiciatis sunt maxime numquam magnam dolorum rem eaque esse omnis
+          temporibus! Nesciunt, officia. Illo.
+          Lorem ipsum dolor sit adipisicing elit. 
+        </p>
+      </aside>
+    </section>
+
+    <footer>
+      <p>
+        Derechos Reservados para Práctica de
+        <span> Jesús A. Carrasquilla V. </span> abril, 2020
+      </p>
+    </footer>
+  </body>
 </html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Imagenes/zulia.jpg" type="image/x-icon">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="nada.php" method="POST"></form>
+      <h1>Practica de Formulario</h1>
+      <section id="preguntas">
+        <p>
+            <label for="name">Nombres y Apellidos :</label>
+            <input type="text" name="nombres" id="name">
+        </p>
+        <p>
+            <label for="fecnac">Fecha de Nacimiento :</label>
+            <input type="date" name="fec_nac" id="fecnac">
+        </p>
+        <fieldset>
+            <legend>Sexo</legend>
+            <ul>
+                <li>
+                    <label>
+                        <input type="radio" name="sexo" value="M">
+                        Masculino
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="sexo" value="F">
+                        Femenino
+                    </label>
+                </li>
+            </fieldset>
+                <p>
+                    <label for="phone">Teléfono :</label>
+                    <input type="tel" name="telef" id="phone">
+                </p>
+                <p>
+                    <label for="photo">Foto Perfil :</label>
+                    <input type="file" name="foto" id="photo" accept="image/*">
+                </p>
+                <p>
+                    <label for="color">Color Favorito :</label>
+                    <input type="color" name="color" id="color">
+                </p>
+                <p>
+                    <label for="hour">Hora de Despertarse :</label>
+                    <input type="time" name="hora" id="hour">
+                </p>    
+                <p>
+                    <label for="number">Carga Familiar :</label>
+                    <input type="number" name="numero" id="number"
+                    min="1" max="12"> 
+                </p>
+                <p>
+                    <label for="datetime">Fecha y Hora :</label>
+                    <input type="datetime-local" name="fechahora" id="datetime">
+                </p>
+                <p>
+                    <label for="month">Mes y Año :</label>
+                    <input type="month" name="mes" id="month">
+                </p>
+                <label>Dia de la semana :</label>
+                <select name="dias" id="days">
+                    <option value="Lunes">Lunes</option>
+                    <option value="Martes">Martes</option>
+                    <option value="Miercoles">Miercoles</option>
+                    <option value="Jueves">Jueves</option>
+                    <option value="Viernes">Viernes</option>
+                    <option value="Sabado">Sabado</option>
+                    <option value="Domingo">Domingo</option>
+                </select>
+                <p>
+                    <label for="week">Elige una Semana y Año :</label>
+                    <input type="week" name="semana" id="week">
+                </p>
+                <p>
+                    <label for="volume">Configure Volumen :</label>
+                    <input type="range" name="volume" id="volume">
+                </p>
+                <label for="obs">Observación :</label>
+                <p>
+                    <textarea name="observa" id="obs" cols="50" rows="10"></textarea>
+                </p>
+                <fieldset>
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="confir">
+                                Todos los datos son verdaderos.
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="confir">
+                                Acepto que verifiquen la información.
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+            </ul>
+        
+      </section>
+      <section id="botones">
+            <p>
+                <input type="submit">
+            </p>
+            <p>
+                <input type="reset">
+            </p>
+      </section>  
+</body>
+</html>

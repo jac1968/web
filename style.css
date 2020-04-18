@@ -1,0 +1,128 @@
+/*****************************/
+/*   Estilos para la tabla   */
+/*****************************/
+
+table {
+    border-collapse: collapse;
+}
+
+.nueva td {
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+.nueva td:hover {
+    background: cornflowerblue;
+    color: aliceblue;
+    box-shadow: 2px 2px 2px #000;
+}
+
+th {
+    border: 1px solid #000;
+    padding: 2px 5px;
+    background: rgb(53, 25, 153);
+    color: aliceblue;
+}
+
+/*************************************/
+/*   Estilos para página principal   */
+/*************************************/
+
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  body {
+    background: rgb(237, 243, 245);
+    min-height: 100vh;
+  }
+  
+  header, 
+  .principal,
+  footer {
+    width: 90%;
+    margin: 20px auto;
+    max-width: 1000px;
+  }
+  
+  header div {
+    display: inline-block;
+  }
+  
+  h1 {
+    background: white;
+    color: black;
+    float: left; 
+    padding: 20px;
+  }
+  
+  header nav {
+    background: #528fd5;
+    overflow: hidden;
+  }
+  
+  header nav ul {
+    list-style: none;
+  }
+  
+  header nav ul li {
+    float: left;
+  }
+  
+  header nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: antiquewhite;
+    text-decoration: none;
+  }
+  
+  header nav ul li a:hover {
+    background: #75aced;
+    box-shadow: 5px 5px 10px black;
+    color: black;
+  }
+  
+  .principal .articulo {
+    width: 68.5%;
+    margin-right: 1.5%;
+    float: left;
+    text-align: justify;
+  }
+  
+  aside {
+    width: 30%;
+    float: left;
+    background: #c762db;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: justify;
+    margin-bottom: 1em;
+  }
+  
+  .principal .articulo article {
+    padding: 20px;
+    margin-bottom: 20px;
+    background: white;
+  }
+  
+  footer {
+    clear: both;
+    text-align: center;
+    background: black;
+    color: antiquewhite;
+    padding: 15px 0;
+    margin-top: 1em;
+  }
+  
+  .principal .articulo article:hover {
+    box-shadow: 5px 5px 10px black;
+  }
+  
+  aside:hover {
+    box-shadow: 5px 5px 10px black;
+  }
+  
+  span:hover {
+      font-size: 20px;
+  }
