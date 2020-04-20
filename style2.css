@@ -1,0 +1,46 @@
+/******************************/
+/*** Estilos para Flex Box  ***/
+/******************************/
+
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    font-size: 40px;
+    min-height: 100vh;
+}
+
+.nom, .ape {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.nom{
+    background: rgb(212, 210, 210);
+    color: black;
+    justify-content: flex-end;
+}
+
+.ape{
+    background: black;
+    color: white;
+}
+
+@media (max-width: 500px)
+{
+    body{
+        flex-direction: column;
+    }
+    .nom, .ape{
+        width: 100%;
+        height: 50vh;
+        justify-content: center;
+    }
+    .nom{
+        align-items: flex-end;
+    }
+    .ape{
+        align-items: flex-start;
+    }
+}

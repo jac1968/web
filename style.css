@@ -2,6 +2,8 @@
 /*   Estilos para la tabla   */
 /*****************************/
 
+
+
 table {
     border-collapse: collapse;
 }
@@ -33,6 +35,23 @@ th {
     padding: 0px;
   }
   
+  @media (max-width: 700px) {
+    body {
+      font-size: 7px !important;
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    body {
+      background-color: grey !important;
+    }
+  }
+  
+  body {
+    min-height: 100vh;
+    font-size: 15px;
+  }
+
   body {
     background: rgb(237, 243, 245);
     min-height: 100vh;
