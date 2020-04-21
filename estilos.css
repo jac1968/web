@@ -1,0 +1,143 @@
+/**************************************/
+/*** Practica para web con Flex Box ***/
+/**************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.kontenedor {
+    background: rgb(148, 141, 141);
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.logo a {
+    color: ghostwhite;
+    font-size: 30px;
+    text-decoration: none;   
+    
+}
+img {
+    border-radius: 50px;
+}
+body {
+    background: #e9e9e9;
+}
+
+nav {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav a {
+    color: ghostwhite;
+    text-decoration: none;
+    background: #c0392b;
+    text-align: center;
+    padding: 10px;
+    flex-grow: 1;
+}
+
+nav  a:hover {
+    background: #e74c3c;
+}
+
+header {
+    background: ghostwhites;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.principal {
+    background: #fff;
+    padding: 20px;
+    flex: 1 1 70%;
+}
+
+.principal article {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.principal article:nth-last-child(1) {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+aside {
+    background: #e67e22;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 20px;
+}
+
+aside .publicidad {
+    background: #d35400;
+    flex: 1 1 30%;
+}
+
+footer {
+    background:#e2ce50;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .link {
+    background: #c0392b;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .link a {
+    flex-grow: 1;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+footer .link a:hover {
+    background: #e74c3c;    
+}
+
+footer .social {
+    width: 30%;
+    background: #c0392b;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+footer .social a {
+    flex-grow: 1;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+footer .social a:hover {
+    background: #e74c3c;
