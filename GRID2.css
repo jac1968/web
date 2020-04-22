@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #e9ecf4;
+    color: black;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    /******************************************/
+    /*** Vamos a trabajar el grid con áreas ***/
+    /******************************************/
+    grid-template-areas: "header    header      header  "
+                         "contenido contenido   sidebar"
+                         "widget1   widget2     sidebar"
+                         "footer    footer      footer";
+}
+
+.contenedor > div, 
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .sidebar,
+.contenedor .footer  {
+    background: rgb(247, 245, 243);
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.contenedor .header {
+    background: #12203e;
+    color: blanchedalmond;
+    /* grid-column: span 3; */
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .contenido {
+    /* grid-column: span 2; */
+    grid-area: contenido;
+}
+
+.contenedor .sidebar {
+    grid-column: 3 / 4;
+    background: coral;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    /* grid-row: span 2; */
+    grid-area: sidebar;
+}
+
+.contenedor .widget1 {
+    grid-area: widget1;
+}
+
+.contenedor .widget2 {
+    grid-area: widget2;
+}
+
+.contenedor .widget1,
+.contenedor .widget2 {
+    background: #55a8fd;
+    color: cornsilk;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .footer {
+    background: #12203e;
+    color: cornsilk;
+    /* grid-column: span 3; */
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .contenedor {
+        grid-template-areas: "header    header      header  "
+                             "contenido contenido   contenido"
+                             "sidebar   sidebar     sidebar"
+                             "widget1   widget1     widget2"
+                             "footer    footer      footer";
+    }
+}
+
