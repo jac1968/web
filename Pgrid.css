@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #414040;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(14, 35, 54);
+}
+
+header {
+    background: linear-gradient( grey, white);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.nave {
+    margin-right: 40px;
+    font-size: 20px;
+    word-spacing: 30px;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+}
+
+.main {
+    display: grid;
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    grid-gap: 10px;
+    grid-template-columns: repeat( 3, 1fr);
+    grid-template-areas: "slaider       slaider     slaider"
+                         "articulos     articulos   articulos"
+                         "section       section     sidebar"
+                         "section       section     sidebar"
+                         "comentario    comentario  redes"
+                         "comentario    comentario  redes"
+                         "footer        footer      footer";
+}
+
+.slaider {
+    grid-area: slaider;
+    padding: 15px;
+    background: rgb(235, 239, 247);
+    border-radius: 7px;
+}
+
+.articulos {
+    grid-area: articulos;
+    background: cornflowerblue;
+    border-radius: 7px;
+    color: cornsilk;
+    background: linear-gradient( rgb(2, 124, 43), rgb(51, 107, 95));
+    padding: 10px;
+    line-height: 30px;
+}
+
+.section {
+    grid-area: section;
+    background: cornflowerblue;
+    border-radius: 7px;
+    background: #414040;
+    color: cornsilk;
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: column;
+}
+
+.art1 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+}
+
+.art2 {
+    /* display: flex; */
+    /* margin: 20px 0; */
+}
+
+h3 {
+    text-align: center;
+    font-size: 25px;
+}
+
+p {
+    margin: 0 20px;
+}
+
+h2 {
+    display: block;
+}
+
+.art2 {
+    grid-area: section;
+    background: cornflowerblue;
+    border-radius: 7px;
+    background: #414040;
+    color: cornsilk;
+    display: flex;
+
+}
+
+.sidebar {
+    background: cornflowerblue;
+    grid-area: sidebar;
+    border-radius: 7px;
+}
+
+.comentario {
+    background: linear-gradient(rgb(80, 78, 78), rgb(100, 99, 99));
+    grid-area: comentario;
+    color: cornsilk;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.redes {
+    background: cornflowerblue;
+    grid-area: redes;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.footer {
+    background: cornflowerblue;
+    grid-area: footer;
+    color: cornsilk;
+    font-size: 20px;
+    border-radius: 7px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
