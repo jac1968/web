@@ -12,6 +12,11 @@ a {
     color: rgb(14, 35, 54);
 }
 
+a:hover{
+    font-size: 35px;
+    text-decoration: underline;
+}
+
 header {
     background: linear-gradient( grey, white);
     color: black;
