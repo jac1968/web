@@ -3,18 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="import" href="component.html"> -->
     <title>Document</title>
 </head>
 <body>
+    <form action="">
+        <input type="text" id="num1">
+        <input type="text" id="num2"> 
+        <input type="button" value="Sumar" onclick="alert( suma() );">
+    </form>
+
     <script> 
-    var nombre;
-    nombre = prompt("Ingresa tu nombre");
-    alert(nombre);
-    document.write(nombre);
-    console.log(nombre);
-    document.write('vamos a probar "ESTO" para ver si funciona');
-    var amigos = ["nom 1", "nom 2", "nom 3", 9727801, 10437925];
-   
+    // // var nombre;
+    // nombre = prompt("Ingresa tu nombre");
+    // alert(nombre);
+    // document.write(nombre);
+    // console.log(nombre);
+    // document.write('vamos a probar "ESTO" para ver si funciona');
+    // var amigos = ["nom 1", "nom 2", "nom 3", 9727801, 10437925];
+
+    var suma = function(n1, n2) {
+        var nume1 =parseInt(document.getElementById("num1").value);
+        var nume2 =parseInt(document.getElementById("num2").value);
+        var resul = nume1 + nume2;
+        return resul;
+    }
     </script>
 </body>
 </html>
