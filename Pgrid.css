@@ -22,7 +22,7 @@ header {
     color: black;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 20px;
 }
 
@@ -33,7 +33,7 @@ header {
 .nave {
     margin-right: 40px;
     font-size: 20px;
-    word-spacing: 30px;
+    word-spacing: 5px;
 }
 
 li {
