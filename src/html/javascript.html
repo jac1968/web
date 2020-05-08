@@ -3,18 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="import" href="component.html"> -->
     <title>Document</title>
 </head>
 <body>
-    <form action="">
+
+    <h1 class="titulo1" id="t1">Primer Título</h1>
+    <div id="st"></div>
+    <p class="parrafo1" id="p1">1.- Eius tenetur doloremque et asperiores <b>OTRO TEXTO</b> similique facere fugiat ex modi, ut minima quo, quas laborum magni quos. Fugit reiciendis at autem obcaecati!</p>
+    
+    <p class="parrafo2" id="p2">2.- Repellendus ut natus sint expedita doloremque nisi sunt impedit. Labore ipsum reprehenderit tenetur alias recusandae ducimus earum consectetur rerum culpa. Eius, ipsum.</p>
+
+    <p class="parrafo3" id="p2">3.- Quaerat laborum dolores veniam nam vitae ipsum quos. Harum, amet laudantium! Velit dolorem dolorum optio vel eligendi facilis deleniti eum corrupti harum?</p>
+    <ol id="lista">
+        <li> Primera oracion mas larga</li>
+        <li> Segunda oracion mas larga</li>
+    </ol>
+
+    <!-- <form action="">
         <input type="text" id="num1">
         <input type="text" id="num2"> 
         <input type="button" value="Sumar" onclick="alert( suma() );">
-    </form>
+    </form> -->
 
     <script> 
-    // // var nombre;
+
+        var elemento = document.createElement("h2");
+        var textoele = document.createTextNode("Esto es un Subtitulo de Prueba");
+        elemento.appendChild(textoele);
+        elemento.setAttribute("align", "center");
+        document.getElementById("st").appendChild(elemento);         
+
+        // otra practica
+        var ele = document.createElement("li"),
+            con = document.createTextNode("Ultima oracion mas laga");
+        ele.appendChild(con);
+        document.getElementById("lista").appendChild(ele);
+        var padre = document.getElementsByTagName("li")[0].parentNode;
+        var primerhijo = document.getElementsByTagName("li")[0];
+        padre.insertBefore(ele, primerhijo);
+
+
+    // var parrafo=document.getElementsByTagName("p");
+
+    // var nombre;
     // nombre = prompt("Ingresa tu nombre");
     // alert(nombre);
     // document.write(nombre);
@@ -22,12 +53,13 @@
     // document.write('vamos a probar "ESTO" para ver si funciona');
     // var amigos = ["nom 1", "nom 2", "nom 3", 9727801, 10437925];
 
-    var suma = function(n1, n2) {
-        var nume1 =parseInt(document.getElementById("num1").value);
-        var nume2 =parseInt(document.getElementById("num2").value);
-        var resul = nume1 + nume2;
-        return resul;
-    }
+    // var suma = function(n1, n2) {
+    //     var nume1 =parseInt(document.getElementById("num1").value);
+    //     var nume2 =parseInt(document.getElementById("num2").value);
+    //     var resul = nume1 + nume2;
+    //     return resul;
+    // }
+
     </script>
 </body>
 </html>
