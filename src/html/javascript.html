@@ -5,7 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    .normal {
+        width: 400px;
+        transition: all .3s;
+    }
+
+    .grande {
+        width: 800px;
+        transition: all .3s;
+
+    }
+</style>
 <body>
+
 
     <h1 class="titulo1" id="t1">Primer Título</h1>
     <div id="st"></div>
@@ -18,6 +31,15 @@
         <li> Primera oracion mas larga</li>
         <li> Segunda oracion mas larga</li>
     </ol>
+
+    <input type="button" value="Cambiar Tamaño" onclick="zoom()">
+
+    <div id="imagen" >
+        <img src="/Imagenes/ferrari.jpg" alt="ferrari" id="F1" class="normal" width="800">
+    </div>
+
+    <input type="text" name="" id="te">
+    <input type="button" value="Saludo" id="bo">
 
     <!-- <form action="">
         <input type="text" id="num1">
@@ -41,6 +63,31 @@
         var padre = document.getElementsByTagName("li")[0].parentNode;
         var primerhijo = document.getElementsByTagName("li")[0];
         padre.insertBefore(ele, primerhijo);
+
+
+        zoom = function() {
+            var ima = document.getElementById("F1");
+            if (ima.className=="normal") {
+                ima.className="grande";
+            } else {
+                ima.className="normal";
+            }
+        } ;
+
+
+        (function() {
+            var saludo=function() {
+                alert("Prueba");
+        };
+        var focus=function() {
+                alert("FOCUS");
+        };
+            var boton = document.getElementById("bo");
+            boton.addEventListener("click", saludo);
+            var texto = document.getElementById("te");
+            texto.addEventListener("focus", focus);
+        } () );
+
 
 
     // var parrafo=document.getElementsByTagName("p");
