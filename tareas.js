@@ -22,13 +22,17 @@
                 nuevoInput.setAttribute("value", "Eliminar");
                 nuevoInput.className = "btn-del";
                 nuevoLi.appendChild(nuevoInput);
-// gg
+
+                // gg
+
                 nuevoInput = document.createElement("input");
                 nuevoInput.setAttribute("type", "button");
                 nuevoInput.setAttribute("value", " OK ");
                 nuevoInput.className = "btn-del";
                 nuevoLi.appendChild(nuevoInput);
-// gg
+
+                // gg
+
                 let i=lista.children.length-1;
                 let btndel = document.getElementsByClassName("btn-del");
                 btndel[i].addEventListener("click", eliminar);
