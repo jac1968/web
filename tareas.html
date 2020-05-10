@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tareas.css">
+    <link rel="shortcut icon" href="/Imagenes/favicon.png" type="image/x-icon">
+    <title>Agregar Tareas en JAVASCRIPT</title>
+</head>
+<body>
+    
+    <div class="principal">
+        <main class="wrap">
+            <form action="" class="formulario">
+                <input type="text" id="agregar" placeholder="Escriba tarea" required>
+                <input type="button" value="Agregar Tarea" id="btn-tarea" class="boton">
+            </form>
+        </main>
+        <h1 class="tareapendiente">Tareas por realizar</h1>
+    </div>
+
+    <div class="tareas">
+        <div class="wrap">
+            <ol class="lista" id="lista">
+                <!-- listas de tareas -->
+            </ol>
+        </div>
+    </div>
+
+    <div class="tarealista">
+        <h1 class="tarea-realizada">Tareas Realizadas</h1>
+        <div class="wrap">
+            <ol class="tarea-lista" id="tarea lista">
+                <!-- listas de tareas -->
+            </ol>
+        </div>
+    </div>
+    
+    <script src="tareas.js"></script>
+</body>
+</html>
