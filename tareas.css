@@ -49,13 +49,10 @@ body {
     box-shadow: 4px 4px 4px black;
 }
  
-/* - Tareas - */
- 
 .tareapendiente {
 	text-align: center;
 	font-size: 20px;
 	margin-top: 10px;
-
 }
 
 .tareas .lista li {
@@ -70,7 +67,6 @@ body {
 li input {
     float: right;
 }
-
 
 .tareas {
 	border-top: 10px solid #D32F2F;

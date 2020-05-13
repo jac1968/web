@@ -1,5 +1,7 @@
 (function(){
+
     // variable
+    
     var lista=document.getElementById("lista"),
         listaok=document.getElementById("tarealista"),
         agregar=document.getElementById("agregar"), 
@@ -8,6 +10,7 @@
     // funciones
 
     var incluir = function(){
+
         if (agregar.value != "") {
             var tarea = agregar.value,
                 nuevoLi = document.createElement("li"),
