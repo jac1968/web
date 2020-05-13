@@ -3,19 +3,23 @@
     padding: 0;
 }
 
+
 body {
     background: #414040;
 }
+
 
 a {
     text-decoration: none;
     color: rgb(14, 35, 54);
 }
 
+
 a:hover{
     font-size: 35px;
     text-decoration: underline;
 }
+
 
 header {
     background: linear-gradient( grey, white);
@@ -26,9 +30,11 @@ header {
     margin: 20px;
 }
 
+
 .logo {
     margin-left: 20px;
 }
+
 
 .nave {
     margin-right: 40px;
@@ -36,10 +42,12 @@ header {
     word-spacing: 5px;
 }
 
+
 li {
     list-style: none;
     color: aliceblue;
 }
+
 
 .main {
     display: grid;
@@ -57,12 +65,14 @@ li {
                          "footer        footer      footer";
 }
 
+
 .slaider {
     grid-area: slaider;
     padding: 15px;
     background: rgb(235, 239, 247);
     border-radius: 7px;
 }
+
 
 .articulos {
     grid-area: articulos;
@@ -73,6 +83,7 @@ li {
     padding: 10px;
     line-height: 30px;
 }
+
 
 .section {
     grid-area: section;
@@ -85,29 +96,35 @@ li {
     flex-direction: column;
 }
 
+
 .art1 {
     display: flex;
     flex-direction: row;
     margin-bottom: 25px;
 }
 
+
 .art2 {
     /* display: flex; */
     /* margin: 20px 0; */
 }
+
 
 h3 {
     text-align: center;
     font-size: 25px;
 }
 
+
 p {
     margin: 0 20px;
 }
 
+
 h2 {
     display: block;
 }
+
 
 .art2 {
     grid-area: section;
@@ -116,14 +133,15 @@ h2 {
     background: #414040;
     color: cornsilk;
     display: flex;
-
 }
+
 
 .sidebar {
     background: cornflowerblue;
     grid-area: sidebar;
     border-radius: 7px;
 }
+
 
 .comentario {
     background: linear-gradient(rgb(80, 78, 78), rgb(100, 99, 99));
@@ -133,14 +151,15 @@ h2 {
     padding: 10px;
 }
 
+
 .redes {
     background: cornflowerblue;
     grid-area: redes;
     border-radius: 7px;
     display: flex;
     justify-content: space-around;
-    
 }
+
 
 .footer {
     background: cornflowerblue;
